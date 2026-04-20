@@ -16,10 +16,7 @@
             --white: #ffffff;
         }
 
-        * {
-            box-sizing: border-box;
-            transition: all 0.3s ease;
-        }
+        * { box-sizing: border-box; transition: all 0.2s ease; }
 
         body {
             font-family: 'Inter', sans-serif;
@@ -37,29 +34,13 @@
             box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
         }
 
-        header h1 {
-            margin: 0;
-            font-size: 2.8rem;
-            letter-spacing: -1px;
-        }
+        header h1 { margin: 0; font-size: 2.8rem; letter-spacing: -1px; }
 
-        header p.tagline {
-            font-size: 1.1rem;
-            color: #94a3b8;
-            max-width: 800px;
-            margin: 15px auto;
-        }
+        header p.tagline { font-size: 1.1rem; color: #94a3b8; max-width: 800px; margin: 15px auto; }
 
-        header .contact-info {
-            margin-top: 20px;
-            font-weight: 300;
-        }
+        header .contact-info { margin-top: 20px; font-weight: 300; }
 
-        .container {
-            max-width: 1000px;
-            margin: -40px auto 40px;
-            padding: 0 20px;
-        }
+        .container { max-width: 1000px; margin: -40px auto 40px; padding: 0 20px; }
 
         section {
             background: var(--white);
@@ -79,20 +60,9 @@
             gap: 10px;
         }
 
-        h2::after {
-            content: "";
-            height: 2px;
-            background: var(--primary);
-            flex-grow: 1;
-            opacity: 0.3;
-        }
+        h2::after { content: ""; height: 2px; background: var(--primary); flex-grow: 1; opacity: 0.2; }
 
-        .tag-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin-top: 15px;
-        }
+        .tag-container { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 15px; }
 
         .tag {
             background: #eff6ff;
@@ -104,12 +74,6 @@
             border: 1px solid #dbeafe;
         }
 
-        .tag:hover {
-            background: var(--primary);
-            color: white;
-            transform: translateY(-2px);
-        }
-
         .job {
             border-left: 3px solid #e2e8f0;
             padding-left: 25px;
@@ -117,52 +81,21 @@
             position: relative;
         }
 
-        .job:hover {
-            border-left-color: var(--primary);
-        }
+        .job:hover { border-left-color: var(--primary); }
 
-        .job h3 {
-            margin: 0;
-            color: var(--secondary);
-        }
+        .job h3 { margin: 0; color: var(--secondary); font-size: 1.25rem; }
 
-        .job .meta {
-            font-size: 0.9rem;
-            color: var(--primary);
-            font-weight: 600;
-            margin: 5px 0 12px;
-        }
+        .job .meta { font-size: 0.9rem; color: var(--primary); font-weight: 600; margin: 5px 0 12px; }
 
-        .grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-        }
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
 
-        ul {
-            padding-left: 20px;
-        }
+        ul { padding-left: 20px; }
 
-        li {
-            margin-bottom: 8px;
-        }
+        li { margin-bottom: 6px; }
 
-        footer {
-            text-align: center;
-            padding: 40px;
-            background: #0f172a;
-            color: #64748b;
-            font-size: 0.9rem;
-        }
+        footer { text-align: center; padding: 40px; background: #0f172a; color: #64748b; font-size: 0.9rem; }
 
-        a {
-            color: var(--primary);
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
+        a { color: #60a5fa; text-decoration: none; }
 
         @media (max-width: 768px) {
             .grid { grid-template-columns: 1fr; }
@@ -175,40 +108,29 @@
 
 <header>
     <h1>Tejas Kumar Nyanachari</h1>
-    <p class="tagline">Embedded Software Engineer | Motor Controls & PWM Algorithms | Embedded Linux | Cybersecurity</p>
+    <p class="tagline">Embedded Software Engineer | Motor Controls | Real-Time Systems | Cybersecurity</p>
     <div class="contact-info">
-        📍 Oberursel, Germany | 📧 <a href="mailto:tejaskumar14@gmail.com" style="color: #60a5fa;">tejaskumar14@gmail.com</a>
+        📍 Oberursel, Germany | 📧 <a href="mailto:tejaskumar14@gmail.com">tejaskumar14@gmail.com</a>
     </div>
 </header>
 
 <div class="container">
+    
     <section>
         <h2>About Me</h2>
-        <p>Embedded Software Engineer with <strong>12+ years of experience</strong> delivering real-world products from concept to series production. Currently expanding expertise in embedded cybersecurity and Linux-based systems to build secure, future-ready platforms.</p>
-        <p>Expertise spans locomotive systems, automotive HVAC, sustainable energy, and high-power construction tools, enabling quick adaptation and robust system-level delivery.</p>
-    </section>
-
-    <section>
-        <h2>Core Skills</h2>
-        <div class="tag-container">
-            <span class="tag">Embedded C</span><span class="tag">C++14/17</span><span class="tag">Python</span>
-            <span class="tag">ARM Cortex (STM32, NXP)</span><span class="tag">FreeRTOS</span>
-            <span class="tag">Embedded Linux (Yocto)</span><span class="tag">FOC / PID Control</span>
-            <span class="tag">CAN / SPI / LIN</span><span class="tag">TCP/IP</span>
-            <span class="tag">MATLAB / Simulink</span><span class="tag">CANoe</span>
-            <span class="tag">TRACE32</span><span class="tag">HIL Testing</span><span class="tag">Git / JIRA</span>
-        </div>
+        <p>Embedded Software Engineer with <strong>12+ years of experience</strong> delivering high-performance products from concept to series production. Specialized in BLDC/PMSM motor controls, diagnostic sub-systems, and secure bootloader development across Automotive, Locomotive, and Industrial sectors.</p>
     </section>
 
     <section>
         <h2>Professional Experience</h2>
+
         <div class="job">
             <h3>Hanon Systems GmbH – Embedded Software Developer</h3>
             <div class="meta">Jun 2023 – Oct 2025 | Bad Homburg</div>
             <ul>
-                <li>Developed BLDC/PMSM motor control firmware using FOC algorithms.</li>
-                <li>Implemented diagnostics and fault detection mechanisms.</li>
-                <li>Optimized performance using TRACE32 debugging.</li>
+                <li>Developed BLDC/PMSM motor control firmware using Field Oriented Control (FOC).</li>
+                <li>Implemented diagnostics, fault detection mechanisms, and PWM algorithms.</li>
+                <li>Optimized system performance using TRACE32 debugging and HIL validation.</li>
             </ul>
         </div>
 
@@ -216,8 +138,17 @@
             <h3>T&S Services GmbH – Embedded Software Developer</h3>
             <div class="meta">Jun 2021 – Jun 2023 | Munich</div>
             <ul>
-                <li>Led development for power tool platforms (3–4 kW).</li>
-                <li>Developed embedded features from system requirements in Agile environments.</li>
+                <li>Led software development for high-power tool platforms (3–4 kW).</li>
+                <li>Managed cross-functional Agile/Scrum delivery for complex system requirements.</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <h3>Matrickz GmbH – Embedded Software Developer</h3>
+            <div class="meta">Feb 2021 – May 2021 | Munich</div>
+            <ul>
+                <li>Engineered ECU diagnostics and secure bootloader functionality.</li>
+                <li>Implemented flash security protocols, checksum validation, and cybersecurity modules.</li>
             </ul>
         </div>
 
@@ -225,41 +156,64 @@
             <h3>Bosch Engineering – Senior Embedded Software Engineer</h3>
             <div class="meta">Jun 2016 – Mar 2020 | Bengaluru</div>
             <ul>
-                <li>Developed HVAC embedded software in C/C++ using model-based design.</li>
-                <li>Led full V-cycle development for automotive projects.</li>
+                <li>Designed HVAC embedded software in C/C++ using Model-Based Design (Simulink).</li>
+                <li>Orchestrated full V-cycle development from requirements to deployment.</li>
             </ul>
+        </div>
+
+        <div class="job">
+            <h3>GE Transportation – Senior Engineer</h3>
+            <div class="meta">Jun 2015 – May 2016</div>
+            <ul>
+                <li>Developed locomotive control software focusing on real-time reliability.</li>
+                <li>Created automated LabVIEW test tools for rigorous system validation.</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <h3>FluxGen Engineering – Engineer</h3>
+            <div class="meta">Jul 2012 – Jul 2015</div>
+            <ul>
+                <li>Architected data acquisition systems for industrial IoT applications.</li>
+                <li>Prototyped full-stack embedded solutions on ARM, Raspberry Pi, and Arduino.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Core Skills</h2>
+        <div class="tag-container">
+            <span class="tag">Embedded C/C++</span><span class="tag">Python</span><span class="tag">ARM Cortex</span>
+            <span class="tag">FreeRTOS</span><span class="tag">Embedded Linux</span><span class="tag">FOC Control</span>
+            <span class="tag">CAN / SPI / LIN</span><span class="tag">MATLAB / Simulink</span><span class="tag">TRACE32</span>
+            <span class="tag">CANoe</span><span class="tag">HIL Testing</span><span class="tag">Secure Boot</span><span class="tag">Agile/Scrum</span>
         </div>
     </section>
 
     <div class="grid">
         <section>
-            <h2>Certifications</h2>
+            <h2>Certifications & Awards</h2>
             <ul>
-                <li>Certified ScrumMaster®</li>
-                <li>Embedded Cybersecurity – Matrickz</li>
-                <li>Advanced Debugging – IAR Academy</li>
+                <li>Certified ScrumMaster® – Scrum Alliance</li>
+                <li>Embedded Cybersecurity – Matrickz Academy</li>
+                <li>Star Performer Award – Bosch Engineering</li>
+                <li>Engineering Impact Award – National Instruments</li>
             </ul>
         </section>
 
         <section>
-            <h2>Languages</h2>
+            <h2>Education & Languages</h2>
+            <p><strong>B.E. Electronics & Communication</strong><br>PES Institute of Technology, Bangalore</p>
+            <hr style="border:0; border-top:1px solid #eee; margin:10px 0;">
             <ul>
-                <li><strong>English:</strong> C1 (Professional)</li>
-                <li><strong>German:</strong> B2 (Intermediate)</li>
-                <li><strong>Kannada:</strong> Native</li>
+                <li>English (C1) | German (B2) | Kannada (Native)</li>
             </ul>
         </section>
     </div>
-
-    <section>
-        <h2>Contact & Social</h2>
-        <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/tejas-kumar-4816733a" target="_blank">linkedin.com/in/tejas-kumar-4816733a</a></p>
-        <p><strong>Phone:</strong> +49 162 7842334</p>
-    </section>
 </div>
 
 <footer>
-    <p>© 2026 Tejas Kumar | Built for the 2026 Embedded Market</p>
+    <p>© 2026 Tejas Kumar | Oberursel, Hessen</p>
 </footer>
 
 </body>
